@@ -9,10 +9,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+	<ItemGroup>
+		<None Remove="img\mistake-3085712_640.jpg" />
+		<None Remove="img\images.jpeg" />
+	</ItemGroup>
+	
   <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="3.1.0" />
     <PackageReference Include="MaterialDesignThemes" Version="5.1.0" />
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="3.1.0" />
   </ItemGroup>
+
+	<ItemGroup>
+		<None Remove="img\mistake-3085712_640.jpg" />
+		<None Remove="img\images.jpeg" />
+	</ItemGroup>
 
 </Project>
