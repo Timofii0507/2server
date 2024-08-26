@@ -6,7 +6,34 @@
         xmlns:local="clr-namespace:_2server"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+        Background="{DynamicResource MaterialDesignPaper}">
     <Grid>
+        <materialDesign:Card Margin="10" Padding="20" Background="{DynamicResource MaterialDesignPaper}">
+            <StackPanel>
+                <TextBlock Text="Recipe Server" 
+                           Style="{StaticResource MaterialDesignHeadline1TextBlock}" 
+                           Margin="0,0,0,20" 
+                           HorizontalAlignment="Center"/>
 
+                <Button Content="Start Server" 
+                        Click="StartServer_Click" 
+                        Style="{StaticResource MaterialDesignRaisedButton}" 
+                        Margin="0,0,0,20" 
+                        HorizontalAlignment="Center"/>
+
+                <Button Content="Stop Server" 
+                        Click="StopServer_Click" 
+                        Style="{StaticResource MaterialDesignRaisedButton}" 
+                        Margin="0,0,0,20" 
+                        HorizontalAlignment="Center"/>
+
+                <ListBox x:Name="LogListBox" 
+                         Height="300" 
+                         Margin="0,0,0,20" 
+                         Background="{DynamicResource MaterialDesignPaper}" 
+                         BorderBrush="{DynamicResource MaterialDesignDivider}" 
+                         BorderThickness="1"/>
+            </StackPanel>
+        </materialDesign:Card>
     </Grid>
 </Window>
